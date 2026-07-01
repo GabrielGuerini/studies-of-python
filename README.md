@@ -1,2 +1,2 @@
 # programas-python-rocketseat
-Exercícios de python rocketseat
+exercícios introdutórios de python rocketseat
