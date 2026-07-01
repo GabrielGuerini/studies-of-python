@@ -1,0 +1,18 @@
+print('Vamo montar o seu crachá de Dev')
+n = input('Digite o seu nome: ')
+ij = int(input('Digite sua idade: '))
+l = input('Digite sua linguagem de programação favorita: ')
+em = input('Digite um emoji: ')
+print("Criando o seu crachá... me dê 10 segundos...")
+import time
+for i in range(10, 0, -1):
+    print(i)
+    time.sleep(1)
+print('=' * 30)
+print('👨🏻‍💻 CRACHÁ DO DEV')
+print('=' * 30)
+print(f'Nome: {n}')
+print(f'Idade: {ij}')
+print(f'Linguagem favorita: {l}')
+print(f'Emoji: {em}')
+print('=' * 30)

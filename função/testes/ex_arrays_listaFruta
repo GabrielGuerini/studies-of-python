@@ -1,0 +1,20 @@
+print('==========+ Bem vindo ao Hortifrute +===========')
+listaprodutos = ['Banana','Kiwi','Tomate','Maça','Laranja','Bergamota','Mamão','Cebola','Brocólis','Pasta de amendoim', 'Alho']
+print('Lista de produtos:')
+for produtos in listaprodutos:
+    print(produtos)
+preco = {
+'Banana':1.00, 'Kiwi':2.20, 'Tomate':1.20, 'Maça':0.75, 'Laranja':0.80, 'Bergamota':0.57, 'Mamão':3.80, 'Cebola':0.30, 'Brocólis':3.20, 'Pasta de amendoim':20.00, 'Alho':0.25
+}
+comprar = input('Digite o produto que você quer: ')
+while comprar not in listaprodutos:
+    print('Não temos este produto, sinto muito!')
+    comprar = input('Digite o produto que você quer: ')
+quantidade = int(input('Me diga a quantidade que você quer: '))
+novamente = input('Você quer comprar outro produto digite S/N ')
+if novamente.lower() != 's':
+    print('Vamos, para o cálculo de sua conta')
+    total = preco[comprar] * quantidade
+print(f'O seu total deu R${total:.2f}')
+    
+
